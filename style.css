@@ -1,46 +1,51 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  background-image: url('tech-blue.jpg'); /* Sesuaikan nama file jika berbeda */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   margin: 20px;
   padding: 0;
+  color: white; /* Agar teks tetap terbaca di atas background gelap */
+  body {
+  background-color: #0d1a26; /* Biru gelap */
+  color: white;
 }
 
-h1 {
-  text-align: center;
-  color: #333;
-  margin-bottom: 20px;
+header h1 {
+  color: #f1c40f; /* Warna kuning emas */
 }
+}
+
 
 table {
   width: 100%;
   border-collapse: collapse;
-  background: #fff;
+  background: #005f99; /* biru terang sesuai background */
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: blue; /* ubah warna teks menjadi biru */
 }
+
+
 
 th, td {
   padding: 12px;
-  border-bottom: 1px solid #ddd;
+  border: 1px solid #1e3c72; /* Biru tua sebagai garis pemisah */
   text-align: center;
 }
 
-th {
-  background-color: #007bff;
-  color: white;
-  text-transform: uppercase;
-}
-
 tr:hover {
-  background-color: #f1f1f1;
+  background-color: #263c75; /* Biru muda saat hover */
 }
 
 .tombol {
   display: block;
   width: 150px;
   text-align: center;
-  background-color: #28a745;
+  background-color: #005f99;
   color: white;
   padding: 10px;
   border-radius: 5px;
