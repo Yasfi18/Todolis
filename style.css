@@ -1,42 +1,107 @@
 body {
   font-family: Arial, sans-serif;
-  background: url("file-FGibn4gyofkdh1jaXeqH3k") no-repeat center center fixed;
+  background-image: url('file-AwGFsh9awX4gX5UWUbD43E.jpg'); /* Ganti jika nama file berbeda */
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   margin: 20px;
   padding: 0;
-  color: white; /* Biar teks tetap terbaca */
+}
+.video-frame-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 90%;
+  pointer-events: none;
+  z-index: 1;
+  
+}
+
+#mainContent {
+  background-color: rgba(255, 255, 255, 0.4); /* Semakin kecil, semakin transparan */
+}
+ .container, .tabel-wrapper, .konten {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+#musikBtn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+  background-color: #111;
+  color: #f1c40f;
+  border: 2px solid #f1c40f;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 5px rgba(255, 204, 0, 0.5);
+}
+
+#musikBtn {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  width: 50px;
+  height: 50px;
+  background-color: #8b0000; /* Hijau Spotify */
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 10px #FFA500(30, 215, 96, 0.6);
+  transition: 0.3s ease;
+  z-index: 1000;
+}
+
+#musikBtn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(30, 215, 96, 1);
+}
+#bgVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -2;
+  opacity: 1;
+  filter: brightness(1) contrast(1.6) saturate(1,1);
 }
 header h1 {
   color: #f1c40f; /* Warna kuning emas */
 }
 
 table {
-  width: 100%;
-  border-collapse: collapse;
-  background: #005f99; /* biru terang sesuai background */
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  color: blue; /* ubah warna teks menjadi biru */
+  background-color: rgba(255, 255, 255, 0.3); /* transparan */
 }
 
-
+thead, tbody, th, td {
+  background-color: transparent !important; /* paksa transparan semua isi tabel */
+}
 
 th, td {
   padding: 12px;
-  border: 1px solid #1e3c72; /* Biru tua sebagai garis pemisah */
+  border: 1px solid darkred; /* Biru tua sebagai garis pemisah */
   text-align: center;
 }
 
 tr:hover {
-  background-color: #263c75; /* Biru muda saat hover */
+  background-color: darkred; /* Biru muda saat hover */
 }
 
 .tombol {
   display: block;
   width: 150px;
   text-align: center;
-  background-color: #005f99;
+  background-color: darkred;
   color: white;
   padding: 10px;
   border-radius: 5px;
